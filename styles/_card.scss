@@ -1,0 +1,80 @@
+.card {
+  background-color: $cardBackground;
+  height: 55%;
+  width: 67%;
+  display: flex;
+  border-radius: 0.5rem;
+  @media (max-width: 870px) {
+    display: inline;
+  }
+}
+.textContainer {
+  display: flex;
+  align-items: center;
+  width: 52%;
+  .text {
+    padding: 13%;
+    h1 {
+      font-size: 1.9rem;
+      color: $mainWhite;
+      margin: 30px 0 20px 0;
+      span {
+        color: $accent;
+      }
+    }
+    p {
+      font-size: 125%;
+      color: $heading;
+      font-family: "Inter", sans-serif;
+      line-height: 1.3rem;
+      margin-right: 10%;
+      margin-bottom: 15%;
+    }
+    .templates {
+      width: 80%;
+      margin-bottom: 5%;
+      display: flex;
+      justify-content: space-between;
+      .smallTemplates {
+        margin: 10px -25px 0 0;
+        h2 {
+          color: $mainWhite;
+          font-size: 190%;
+          font-family: "Inter", sans-serif;
+        }
+        p {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+.imgContainer {
+  width: 48%;
+  height: 100%;
+  background-color: $accent;
+  display: flex;
+  border-radius: 0 0.5rem 0.5rem 0;
+
+  .desktopImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    position: relative;
+    mix-blend-mode: multiply;
+  }
+  .mobileImg {
+    display: none;
+  }
+  .violet {
+    background-color: $accent;
+    width: 32.2%;
+    height: 55%;
+    position: absolute;
+    opacity: 0.25;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
