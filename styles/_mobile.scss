@@ -1,0 +1,64 @@
+@media screen and (max-width: 400px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 120%;
+    margin-top: 70%;
+  }
+  .textContainer {
+    order: 2;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    display: flex;
+    .text {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 250%;
+        width: 100%;
+        margin-top: -5%;
+      }
+      p {
+        padding: 0;
+        margin-right: 5%;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .templates {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+      margin-left: -10%;
+      margin-top: -7%;
+      .smallTemplates {
+        h2 {
+          font-size: 300%;
+        }
+      }
+    }
+  }
+  .imgContainer {
+    order: 1;
+    width: 100%;
+    height: 40%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    .violet {
+      width: 90%;
+      height: 48%;
+    }
+    .text {
+      padding: 0;
+    }
+  }
+}
